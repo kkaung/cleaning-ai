@@ -3,7 +3,6 @@ import { PropsWithChildren } from 'react';
 import type { Metadata, Viewport } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import { TailwindIndicator } from '@/components/tailwind-indicator';
-import { GoogleTagManager } from '@next/third-parties/google';
 import { env } from '@/env.mjs';
 import { siteConfig } from '@/configs/site';
 import { fontSans } from '@/lib/fonts';
@@ -54,7 +53,6 @@ export default async function RootLayout({ children }: PropsWithChildren) {
                 <Providers>{children}</Providers>
                 <TailwindIndicator />
                 <Toaster />
-                <GoogleTagManager gtmId={env.GA_MEASUREMENT_ID} />
             </body>
         </html>
     );
