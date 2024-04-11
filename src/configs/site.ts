@@ -12,7 +12,7 @@ const links = {
 export const siteConfig = {
     logo: 'CleaningIA',
     name: 'Cleaning IA',
-    title: 'Cleaning IA',
+    title: 'Cleaning IA Canberra',
     domain: 'cleaningia.com.au',
     description:
         'Expert cleaning services in Canberra. We provides top-rated house and office cleaning. Insured, reliable, and affordable. Book online today!',

@@ -27,7 +27,7 @@ export default async function SiteFooter({ ...props }: SiteFooterProps) {
                                 href="/"
                                 className="text-2xl italic flex items-center space-x-2 font-bold"
                             >
-                                {siteConfig.name}
+                                {siteConfig.title}
                             </Link>
                             <Link
                                 href="/"
