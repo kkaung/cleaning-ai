@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     keywords: [],
     authors: [],
-    creator: 'azcleaning',
+    creator: 'cleaningai',
     openGraph: {
         type: 'website',
         locale: 'en_US',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         title: siteConfig.name,
         description: siteConfig.description,
         images: [`${siteConfig.url}/og.jpg`],
-        creator: '@azcleaning',
+        creator: '@cleaningai',
     },
     icons: {
         icon: '/favicon.ico',
