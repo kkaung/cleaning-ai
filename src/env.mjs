@@ -8,8 +8,6 @@ export const env = createEnv({
      */
     server: {
         NODE_ENV: z.enum(['development', 'test', 'production']),
-        GA_MEASUREMENT_ID: z.string(),
-        GM_API_KEY: z.string(),
     },
 
     /**
@@ -30,8 +28,7 @@ export const env = createEnv({
     runtimeEnv: {
         NODE_ENV: process.env.NODE_ENV,
         NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
-        GM_API_KEY: process.env.GM_API_KEY,
-        GA_MEASUREMENT_ID: process.env.GA_MEASUREMENT_ID,
+        
         NEXT_PUBLIC_POSTHOG_KEY: process.env.NEXT_PUBLIC_POSTHOG_KEY,
         NEXT_PUBLIC_POSTHOG_HOST: process.env.NEXT_PUBLIC_POSTHOG_HOST,
     },
