@@ -33,8 +33,8 @@ const items = [
         content: `Trust our expert customer service team for comprehensive support from inquiry to post-service, ensuring your satisfaction at every stage.`,
     },
     {
-        title: 'Across Wollongong',
-        content: `We’ve got insured & vetted airbnb cleaners across Wollongong, ready to help get you in getting your airbnb house sparkling clean.`,
+        title: 'Across Canberra',
+        content: `We’ve got insured & vetted airbnb cleaners across Canberra, ready to help get you in getting your airbnb house sparkling clean.`,
     },
     {
         title: 'No Hidden Fees',
@@ -56,20 +56,20 @@ export default function Features({ ...props }: FeaturesProps) {
             <h2 className={headingVariants({})}>
                 More Than Just A Cleaning Service
             </h2>
-            <ul className="grid grid-cols-1 gap-y-6 gap-x-12 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-y-6 gap-x-12 md:grid-cols-3">
                 {items.map((item, idx) => {
                     return (
-                        <li key={idx} className="space-y-3 py-6 border-b">
+                        <div key={idx} className="space-y-3 py-6 border-b">
                             <h3 className="font-semibold text-lg">
                                 {item.title}
                             </h3>
                             <p className="leading-tight text-muted-foreground">
                                 {item.content}
                             </p>
-                        </li>
+                        </div>
                     );
                 })}
-            </ul>
+            </div>
         </section>
     );
 }
