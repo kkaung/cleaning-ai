@@ -10,7 +10,7 @@ const getFAQs = (location?: string) => {
     return [
         {
             question: 'What is residental window cleaning?',
-            answer: `Residential window cleaning in Wollongong refers to professional cleaning services offered to homeowners and residents for keeping their windows sparkling clean. Window cleaning companies in Wollongong specialize in providing comprehensive interior and exterior window cleaning for houses, apartments, and other residential properties.`,
+            answer: `Residential window cleaning in ${location} refers to professional cleaning services offered to homeowners and residents for keeping their windows sparkling clean. Window cleaning companies in Wollongong specialize in providing comprehensive interior and exterior window cleaning for houses, apartments, and other residential properties.`,
         },
         {
             question: 'Are your cleaning teams professionals insured?',

@@ -17,9 +17,8 @@ const getFAQs = (location?: string) => {
             answer: 'Our carpet cleaners can clean all types of carpets and rugs, including synthetic fibers, natural fibers, berber, plush, patterned, and area rugs. We tailor our solutions and techniques to the specific carpet material and construction for safe and effective cleaning.',
         },
         {
-            question:
-                'What methods do you use for carpet cleaning in Wollongong?',
-            answer: `We use a combination of hot water extraction (also known as steam cleaning) and encapsulation techniques for deep carpet cleaning in Wollongong. Hot water extraction flushes out dirt and debris, while encapsulation helps lift stubborn stains and oils from the carpet fibers.`,
+            question: `What methods do you use for carpet cleaning in ${location}?`,
+            answer: `We use a combination of hot water extraction (also known as steam cleaning) and encapsulation techniques for deep carpet cleaning in ${location}. Hot water extraction flushes out dirt and debris, while encapsulation helps lift stubborn stains and oils from the carpet fibers.`,
         },
         {
             question:
@@ -36,9 +35,8 @@ const getFAQs = (location?: string) => {
             answer: 'No assurance for same-day bookings, but we often meet the request depending on the day.',
         },
         {
-            question:
-                'Do you offer carpet stain removal services in Wollongong?',
-            answer: 'Yes, we specialize in carpet stain removal in Wollongong. Our technicians are trained to treat a wide range of stains, including pet stains, food and beverage spills, makeup, and more. We use eco-friendly, professional-grade products to effectively remove tough stains.',
+            question: `Do you offer carpet stain removal services in ${location}?`,
+            answer: `Yes, we specialize in carpet stain removal in ${location}. Our technicians are trained to treat a wide range of stains, including pet stains, food and beverage spills, makeup, and more. We use eco-friendly, professional-grade products to effectively remove tough stains.`,
         },
         {
             question: `What is your cancellation policy?`,
