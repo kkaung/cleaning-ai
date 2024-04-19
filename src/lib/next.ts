@@ -1,5 +1,6 @@
 import { headers } from 'next/headers';
 import { toTitleCase } from './utils';
+import { env } from '@/env.mjs';
 
 export const getCity = () => {
     const headersList = headers();
@@ -14,7 +15,7 @@ export const checkUserAgentForGooglebot = () => {
 
     const isGooglebot = /Googlebot/i.test(userAgent);
 
-    return true;
+    return env.NODE_ENV === 'development' ? true : isGooglebot;
 
     return isGooglebot;
 };
