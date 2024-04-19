@@ -24,9 +24,9 @@ var computedFields = {
     }
   }
 };
-var Author = defineDocumentType(() => ({
-  name: "Author",
-  filePathPattern: `authors/**/*.mdx`,
+var Service = defineDocumentType(() => ({
+  name: "Service",
+  filePathPattern: `services/**/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
@@ -35,14 +35,6 @@ var Author = defineDocumentType(() => ({
     },
     description: {
       type: "string"
-    },
-    avatar: {
-      type: "string",
-      required: true
-    },
-    linkin: {
-      type: "string",
-      required: true
     }
   },
   computedFields
@@ -97,7 +89,7 @@ var Post = defineDocumentType(() => ({
 var contentlayer_config_default = makeSource({
   contentDirPath: "./src/content",
   disableImportAliasWarning: true,
-  documentTypes: [Page, Post, Author],
+  documentTypes: [Page, Post, Service],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
@@ -155,9 +147,9 @@ var contentlayer_config_default = makeSource({
   }
 });
 export {
-  Author,
   Page,
   Post,
+  Service,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-7LQPHSVS.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-OGUXCV4Y.mjs.map

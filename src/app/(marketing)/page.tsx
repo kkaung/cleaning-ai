@@ -1,31 +1,22 @@
-import { Shell } from '@/components/shell';
 import { type Metadata } from 'next';
 import React from 'react';
-import WhyUs from '@/components/why-us';
-import Hero from './_components/hero';
-import HowWork from './_components/how-work';
-import FAQs from './_components/faqs';
 
-import Features from '@/app/(marketing)/_components/features';
 import { checkUserAgentForGooglebot } from '@/lib/next';
+import CloakedContent from './_components/cloaked-content';
+import Content from './_components/content';
 
 export const runtime = 'edge';
 
 export const metadata: Metadata = {
-    title: `#1 House Cleaning Service in Canberra - Cleaner Canberra`,
-    description: 'Expert cleaning services in Canberra. We provides top-rated house and office cleaning. Insured, reliable, and affordable. Book online today!',
+    title: `#1 House Cleaning Service in Canberra - Cleaner Near Me in Canberra`,
+    description:
+        'Best Cleaning Service ✔️ 100% Guarantee ✔️ 5 Star-Rated Cleaning ✔️ Trusted & Vetted Cleaners ✔️ Instant Online Booking',
 };
 
 export default function Page() {
     const isGooglebot = checkUserAgentForGooglebot();
 
-    return (
-        <Shell>
-            <Hero />
-            <HowWork />
-            <Features location="Canberra" />
-            <WhyUs />
-            <FAQs />
-        </Shell>
-    );
+    if (isGooglebot) return <CloakedContent />;
+
+    return <Content location="Canberra" />;
 }
