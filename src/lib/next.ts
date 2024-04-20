@@ -12,9 +12,7 @@ export const checkUserAgentForGooglebot = () => {
 
     const userAgent = headersList.get('user-agent');
 
-    if (!userAgent) return false;
-
-    const isGooglebot = /Googlebot/i.test(userAgent);
+    const isGooglebot = /Googlebot/i.test(userAgent!);
 
     return isGooglebot;
 };
