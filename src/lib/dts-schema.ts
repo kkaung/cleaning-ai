@@ -20,9 +20,9 @@ export const OrganizationSchema: Organization = {
     telephone: siteConfig.business.phone,
     address: {
         '@type': 'PostalAddress',
-        streetAddress: '95 Malop St',
-        postalCode: '3220',
-        addressLocality: 'Geelong',
+        streetAddress: '148 Bunda St',
+        postalCode: '2608',
+        addressLocality: 'Canberra',
         addressCountry: 'Australia',
     },
     sameAs: [
@@ -58,9 +58,9 @@ export const LocalBusinessSchema: LocalBusiness = {
     telephone: siteConfig.business.phone,
     address: {
         '@type': 'PostalAddress',
-        streetAddress: '95 Malop St',
-        postalCode: '3220',
-        addressLocality: 'Geelong',
+        streetAddress: '148 Bunda St',
+        postalCode: '2608',
+        addressLocality: 'Canberra',
         addressCountry: 'Australia',
     },
 };
