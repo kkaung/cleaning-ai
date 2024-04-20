@@ -67,12 +67,12 @@ export const siteConfig = {
             title: 'Services',
             items: [
                 {
-                    title: 'Deep Cleaning Canberra',
-                    href: '/deep-cleaning-canberra',
-                },
-                {
                     title: 'Regular Cleaning Canberra',
                     href: '/regular-cleaning-canberra',
+                },
+                {
+                    title: 'Deep Cleaning Canberra',
+                    href: '/deep-cleaning-canberra',
                 },
                 {
                     title: 'End Of Lease Cleaning Canberra',

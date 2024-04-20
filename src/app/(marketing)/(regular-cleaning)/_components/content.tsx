@@ -14,14 +14,12 @@ interface ContentProps {
 
 export default function Content({ city, suburb, segments }: ContentProps) {
     return (
-        <>
-            <Shell>
-                <Hero location={city} />
-                <HowWork location={city} />
-                <Features location={city} />
-                <FAQs location={city} />
-                <Breadcrumbs segments={segments} dottable={false} />
-            </Shell>
-        </>
+        <Shell>
+            <Hero location={city} />
+            <HowWork location={city} />
+            <Features location={city} />
+            <FAQs location={city} />
+            <Breadcrumbs segments={segments} dottable={false} />
+        </Shell>
     );
 }
