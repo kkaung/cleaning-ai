@@ -6,6 +6,8 @@ import { allServices } from 'contentlayer/generated';
 export default function CloakedContent() {
     const service = allServices.find(v => v.slugAsParams === 'house-cleaning')!;
 
+    console.log(service.body.code);
+
     return (
         <Shell as="article" variant="markdown">
             <Mdx code={service.body.code} />

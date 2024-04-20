@@ -10,7 +10,9 @@ export const getCity = () => {
 export const checkUserAgentForGooglebot = () => {
     const headersList = headers();
 
-    const userAgent = headersList.get('user-agent')!;
+    const userAgent = headersList.get('user-agent');
+
+    if (!userAgent) return false;
 
     const isGooglebot = /Googlebot/i.test(userAgent);
 
