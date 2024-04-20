@@ -22,8 +22,6 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import React from 'react';
 
-export const runtime = 'edge';
-
 export async function generateMetadata(): Promise<Metadata> {
     return {
         title: 'House Cleaning Prices In Geelong',

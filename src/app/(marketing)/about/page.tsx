@@ -9,8 +9,6 @@ import {
 } from '@/components/page-header';
 import { Breadcrumbs } from '@/components/pagers/breadcrumbs';
 
-export const runtime = 'edge';
-
 export const metadata: Metadata = {
     title: `About Us - ${siteConfig.name}`,
     description: `Join us on our journey to revolutionize the cleaning industry! Get acquainted with our dedicated field and office staff members, and learn about the inception of ${siteConfig.name}.`,

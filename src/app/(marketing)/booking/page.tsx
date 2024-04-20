@@ -8,7 +8,6 @@ import { Shell } from '@/components/shell';
 import { type Metadata } from 'next';
 import React from 'react';
 
-export const runtime = 'edge';
 
 export const metadata: Metadata = {
     title: 'Book Your End Lease Cleaning Service Now',

@@ -2,7 +2,6 @@ import { PageHeader, PageHeaderHeading } from '@/components/page-header';
 import { Breadcrumbs } from '@/components/pagers/breadcrumbs';
 import { Shell } from '@/components/shell';
 import { siteConfig } from '@/configs/site';
-import { absoluteUrl } from '@/lib/utils';
 import { allProducts } from 'contentlayer/generated';
 import { Metadata } from 'next';
 import Link from 'next/link';
