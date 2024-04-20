@@ -11,7 +11,7 @@ const links = {
 
 export const siteConfig = {
     logo: 'CleaningIA',
-    name: 'Cleaning IA',
+    name: 'Cleaning IA Canberra',
     title: 'Cleaning IA Canberra',
     domain: 'cleaningia.com.au',
     description:
@@ -116,7 +116,10 @@ export const siteConfig = {
         },
         {
             title: 'Company',
-            items: [{ title: 'About Us', href: '/about' }],
+            items: [
+                { title: 'About Us', href: '/about' },
+                { title: 'Products', href: '/products' },
+            ],
         },
     ] satisfies FooterItem[],
     business: {

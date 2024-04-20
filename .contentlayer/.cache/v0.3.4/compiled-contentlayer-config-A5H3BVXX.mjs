@@ -86,10 +86,41 @@ var Post = defineDocumentType(() => ({
   },
   computedFields
 }));
+var Product = defineDocumentType(() => ({
+  name: "Product",
+  filePathPattern: `products/**/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      required: true
+    },
+    description: {
+      type: "string"
+    },
+    price: {
+      type: "number",
+      required: true
+    },
+    image: {
+      type: "string",
+      required: true
+    },
+    ratingValue: {
+      type: "string",
+      required: true
+    },
+    ratingCount: {
+      type: "number",
+      required: true
+    }
+  },
+  computedFields
+}));
 var contentlayer_config_default = makeSource({
   contentDirPath: "./src/content",
   disableImportAliasWarning: true,
-  documentTypes: [Page, Post, Service],
+  documentTypes: [Page, Post, Service, Product],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
@@ -149,7 +180,8 @@ var contentlayer_config_default = makeSource({
 export {
   Page,
   Post,
+  Product,
   Service,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-OGUXCV4Y.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-A5H3BVXX.mjs.map

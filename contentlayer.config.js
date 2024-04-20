@@ -91,10 +91,42 @@ export const Post = defineDocumentType(() => ({
     computedFields,
 }));
 
+export const Product = defineDocumentType(() => ({
+    name: 'Product',
+    filePathPattern: `products/**/*.mdx`,
+    contentType: 'mdx',
+    fields: {
+        title: {
+            type: 'string',
+            required: true,
+        },
+        description: {
+            type: 'string',
+        },
+        price: {
+            type: 'number',
+            required: true,
+        },
+        image: {
+            type: 'string',
+            required: true,
+        },
+        ratingValue: {
+            type: 'string',
+            required: true,
+        },
+        ratingCount: {
+            type: 'number',
+            required: true,
+        },
+    },
+    computedFields,
+}));
+
 export default makeSource({
     contentDirPath: './src/content',
     disableImportAliasWarning: true,
-    documentTypes: [Page, Post, Service],
+    documentTypes: [Page, Post, Service, Product],
     mdx: {
         remarkPlugins: [remarkGfm],
         rehypePlugins: [
