@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function Page() {
     const isGooglebot = checkUserAgentForGooglebot();
 
-    if (isGooglebot) return <div>This is googlebot</div>;
+    if (isGooglebot) return <CloakedContent />;
 
     return <Content location="Canberra" />;
 }
