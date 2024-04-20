@@ -8,6 +8,9 @@ export const metadata: Metadata = {
     title: 'Cart - Shop Online',
     description:
         'Complete your online shopping experience by reviewing and securing your items in our easy-to-use cart',
+    alternates: {
+        canonical: '/cart',
+    },
 };
 
 export default function Page() {
