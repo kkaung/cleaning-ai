@@ -1,9 +1,9 @@
 import { type Metadata } from 'next';
 import React from 'react';
-
-import { checkUserAgentForGooglebot } from '@/lib/next';
 import CloakedContent from './_components/cloaked-content';
 import Content from './_components/content';
+
+import { checkUserAgentForGooglebot } from '@/lib/next';
 
 export const runtime = 'edge';
 
