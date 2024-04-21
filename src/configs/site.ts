@@ -110,16 +110,14 @@ export const siteConfig = {
                 { title: 'Contact Us', href: '/contact' },
                 { title: 'Blog', href: '/blog' },
                 { title: 'Pricing', href: '/pricing' },
+                { title: 'Products', href: '/products' },
                 { title: 'Privacy Policy', href: '/privacy' },
                 { title: 'Terms And Conditions', href: '/terms' },
             ],
         },
         {
             title: 'Company',
-            items: [
-                { title: 'About Us', href: '/about' },
-                { title: 'Products', href: '/products' },
-            ],
+            items: [{ title: 'About Us', href: '/about' }],
         },
     ] satisfies FooterItem[],
     business: {

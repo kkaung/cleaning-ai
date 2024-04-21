@@ -10,7 +10,7 @@ import React from 'react';
 export const metadata: Metadata = {
     title: `Shop - ${siteConfig.name}`,
     description:
-        'Shop some helpful tools for your home. Sydney Roofers have picked some useful stuff to use at your home.',
+        'Explore our wide range of top-quality cleaning supplies and equipment for your home or business in Canberra - shop online now.',
     alternates: {
         canonical: '/products',
     },

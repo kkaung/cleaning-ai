@@ -86,7 +86,7 @@ export default async function PagePage({ params }: PageProps) {
             <Breadcrumbs
                 segments={[
                     { title: 'Home', href: '/' },
-                    { title: 'Pricing', href: '/pricing' },
+                    { title: page.title, href: page.slug },
                 ]}
                 dottable={false}
                 className="mb-8"

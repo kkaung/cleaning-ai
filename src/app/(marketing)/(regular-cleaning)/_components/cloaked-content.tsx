@@ -12,7 +12,7 @@ export default function CloakedContent() {
             <Breadcrumbs
                 segments={[
                     { title: 'Home', href: '/' },
-                    { title: 'Regular Cleaning Canberra', href: '/' },
+                    { title: 'Regular Cleaning Canberra', href: '/regular-cleaning-canberra' },
                 ]}
             />
             <Mdx code={page.body.code} />
