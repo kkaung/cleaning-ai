@@ -10,7 +10,7 @@ const links = {
 };
 
 export const siteConfig = {
-    logo: 'CleaningIA',
+    logo: 'Cleaning IA',
     name: 'Cleaning IA Canberra',
     title: 'Cleaning IA Canberra',
     domain: 'cleaningia.com.au',

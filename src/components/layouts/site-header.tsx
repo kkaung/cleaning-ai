@@ -26,7 +26,7 @@ const SiteHeader = ({ ...props }: SiteHeaderProps) => {
                         sidebarNavItems={siteConfig.mainNav}
                     />
                     <div className="relative">
-                        <span className="font-extrabold text-2xl italic text-primary">
+                        <span className="font-extrabold text-xl italic text-primary text-nowrap">
                             {siteConfig.logo}
                         </span>
                         <Link
