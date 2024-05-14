@@ -8,6 +8,7 @@ import {
     PageHeaderHeading,
 } from '@/components/page-header';
 import { Breadcrumbs } from '@/components/pagers/breadcrumbs';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: `About Us - ${siteConfig.name}`,
@@ -34,43 +35,34 @@ export default function page() {
                 </PageHeaderDescription>
             </PageHeader>
             <div className="mx-auto prose prose-quoteless prose-neutral dark:prose-invert">
-                <section>
-                    <h2>The Genesis</h2>
-                    <p>
-                        resident deeply attuned to the transformative influence
-                        of a tidy home on personal well-being. Recognizing the
-                        fast pace of contemporary living, Haroun conceptualized
-                        a dependable, top-tier cleaning service aimed at
-                        affording individuals the luxury of time and the
-                        serenity of a pristine living space.
-                    </p>
-                </section>
-                <section>
-                    <h2>The Mission</h2>
-                    <p>
-                        Under Kelvin&apos;s visionary leadership,
-                        {siteConfig.name}
-                        transcended its origins as a mere cleaning service,
-                        evolving into a catalyst for enhanced lifestyles. By
-                        relieving individuals of the burdensome task of
-                        household chores, Coast Maid strives to elevate the
-                        overall quality of life. Kelvin perceives his company
-                        not only as a business entity but also as an
-                        indispensable cornerstone of the community.
-                    </p>
-                </section>
-                <section>
-                    <h2>The Future</h2>
-                    <p>
-                        Kelvin&apos;s aspirations for {siteConfig.name} reach
-                        far beyond traditional cleaning services. His goal is to
-                        revolutionize customer satisfaction within the industry,
-                        constantly adapting to meet the changing needs of
-                        clients. While services may expand and diversify, the
-                        core mission remains unchanged: transforming houses into
-                        homes, one immaculate room at a time.
-                    </p>
-                </section>
+                <p>
+                    <Link href="/">Top Cleaner Canberra</Link> is a premier
+                    cleaning service provider catering to residential and
+                    commercial clients in the Canberra region. Established with
+                    a commitment to excellence, we have built a reputation for
+                    delivering superior cleaning solutions with a personalized
+                    touch.
+                </p>
+                <p>
+                    Our team of highly trained and experienced professionals
+                    takes pride in their work, ensuring meticulous attention to
+                    detail and a dedication to using eco-friendly cleaning
+                    products. Whether it&apos;s a one-time deep clean, regular
+                    maintenance, or specialized services like carpet cleaning or
+                    window washing, we tailor our approach to meet the unique
+                    needs of each client.
+                </p>
+                <p>
+                    At Top Cleaner Canberra, we prioritize open communication,
+                    transparency, and building long-lasting relationships with
+                    our clients. Our services are backed by comprehensive
+                    insurance coverage, and we strive to exceed expectations
+                    with every job we undertake. With a focus on
+                    professionalism, reliability, and quality workmanship, we
+                    are committed to creating a cleaner, healthier, and more
+                    inviting living or working environment for our valued
+                    customers.
+                </p>
             </div>
         </Shell>
     );
