@@ -51,7 +51,6 @@ export default async function SiteFooter({ ...props }: SiteFooterProps) {
                                     className="w-4 h-4 mr-1 inline"
                                     aria-hidden
                                 />
-                                <span className="sr-only">Phone Number</span>
                                 {siteConfig.business.phone}
                             </div>
                             <div className={cn('cursor-pointer text-sm')}>
@@ -59,7 +58,6 @@ export default async function SiteFooter({ ...props }: SiteFooterProps) {
                                     aria-hidden
                                     className="w-4 h-4 mr-1 inline"
                                 />
-                                <span className="sr-only">Office Address</span>
                                 {siteConfig.business.address}
                             </div>
                             <div className={cn('cursor-pointer text-sm')}>
@@ -67,9 +65,6 @@ export default async function SiteFooter({ ...props }: SiteFooterProps) {
                                     aria-hidden
                                     className="w-4 h-4 mr-1 inline"
                                 />
-                                <span className="sr-only">
-                                    Business Opening Hour
-                                </span>
                                 {siteConfig.business.openingHour}
                             </div>
                             <div className="text-muted-foreground">
@@ -84,9 +79,9 @@ export default async function SiteFooter({ ...props }: SiteFooterProps) {
                     >
                         {siteConfig.footerNav.map(item => (
                             <div key={item.title} className="space-y-3">
-                                <h4 className="text-base font-medium">
+                                <p className="text-base font-medium">
                                     {item.title}
-                                </h4>
+                                </p>
                                 <nav className="space-y-2">
                                     {item.items.map(link => (
                                         <Link
